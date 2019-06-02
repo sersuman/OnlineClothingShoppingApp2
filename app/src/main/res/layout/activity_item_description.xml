@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    tools:context=".ItemDescriptionActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ivDesProfile"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <TextView
+        android:id="@+id/tvDesItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_toEndOf="@id/ivDesProfile"
+        android:hint="Item Name"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDesItemPrice"
+        android:layout_below="@id/tvDesItemName"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/ivDesProfile"
+        android:hint="Item Price"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDesItemDescription"
+        android:layout_below="@id/tvDesItemPrice"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/ivDesProfile"
+        android:hint="Item Price"
+        android:textSize="10sp"/>
+</RelativeLayout>
